@@ -14,6 +14,7 @@ class GithubButton extends LitElement {
         display: inline-block;
         min-width: 16px;
         min-height: 16px;
+        background-color: var(--background-color, none)
       }
       
       button {
@@ -64,14 +65,19 @@ class GithubButton extends LitElement {
 
   static get properties () {
     return {
-      link: String
+      link: String,
+      newWindow: Boolean
     }
   }
 
   #handleClick (event) {
     const githubBaseURL = 'https://github.com'
     const githubURL = new URL(this.link, githubBaseURL)
-    window.location.href = githubURL
+    if (this.newWindow === "true") {
+      window.open(githubURL)
+    } else {
+      window.location.href = githubURL
+    }
   }
 
   render () {

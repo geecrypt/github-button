@@ -1,8 +1,24 @@
-![GitHub issues](https://img.shields.io/github/issues/CICCIOSGAMINO/github-button)
-[![npm version](https://badgen.net/npm/v/@cicciosgamino/github-button)](https://www.npmjs.com/package/@cicciosgamino/gihub-button)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/cicciosgamino/github-button)
+# Devradius Pre-filter
 
-# \<github-button\>
+#### Dev env setup (2 hrs)
+
+* create new VM in VirtualBox (5 mins)
+* download Ubuntu 20.04 image (1.75 hrs)
+* `npm install`
+* `npm run dev`
+
+#### Feature implementation (25 mins)
+
+* Background color (20 mins)
+  * The user can use the `--background-color` css variable to set the background color of the `<github-button>`.
+  * https://lit-element.polymer-project.org/guide/styles#customprops
+
+* GitHub link behavior (5 mins)
+  * The user can set the `newWindow` attribute to `"true"` to open the GitHub URL in a new window/tab.
+
+---
+
+# <github-button\>
 
 Simple github button that can be use only to link github, users, projects and other stuff. Active only on https://github.com domain. With the link attribute you can set the path into the github.com world you want link to. Best use case to link the open-source project is inserted to.
       
